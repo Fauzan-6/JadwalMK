@@ -1,7 +1,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #0f172a;
-    color: #f8fafc;
+    color: #3e90e3;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,7 +9,7 @@ body {
     margin: 0;
 }
 .container {
-    background-color: #1e293b;
+    background-color: #35517d;
     padding: 30px;
     border-radius: 12px;
     text-align: center;
@@ -19,7 +19,7 @@ body {
     display: inline-block;
     padding: 12px 20px;
     margin: 10px;
-    background-color: #38bdf8;
+    background-color: #00f2ff;
     color: #0f172a;
     text-decoration: none;
     border-radius: 8px;

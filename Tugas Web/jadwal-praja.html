@@ -1,94 +1,125 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jadwal Kuliah Praja</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jadwal Kuliah Praja</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="panel">
-    <h1>Jadwal Kuliah Praja</h1>
+  <!-- Navbar Bootstrap -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand font-weight-bold" href="index.html">UNTIRTA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="jadwal-fajar.html">Jadwal Fajar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="jadwal-praja.html">Jadwal Praja</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <table>
-      <thead>
-        <tr>
-          <th>Hari</th>
-          <th>Mata Kuliah</th>
-          <th>Jumlah SKS</th>
-          <th>Waktu</th>
-          <th>Ruang</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Senin</td>
-          <td>Pancasila</td>
-          <td>2</td>
-          <td>11:00 - 12:40</td>
-          <td>Ruang Virtual (VRTL)</td>
-        </tr>
-        <tr>
-          <td>Selasa</td>
-          <td>Pemrograman Web</td>
-          <td>3</td>
-          <td>13:00 - 15:30</td>
-          <td>Ruang Lab. Informatika (Z5.C1.Lab.IF)</td>
-        </tr>
-        <tr>
-          <td>Selasa</td>
-          <td>Sistem Basis Data</td>
-          <td>3</td>
-          <td>15:30 - 18:00</td>
-          <td>Ruang Kuliah U 205 (Z5.U.205)</td>
-        </tr>
-        <tr>
-          <td>Rabu</td>
-          <td>Desain dan Analisis Algoritma</td>
-          <td>3</td>
-          <td>13:00 - 15:30</td>
-          <td>Ruang Kuliah U 205 (Z5.U.205)</td>
-        </tr>
-        <tr>
-          <td>Rabu</td>
-          <td>Studi Kebantenan</td>
-          <td>2</td>
-          <td>16:20- 18:00</td>
-          <td>Ruang Kuliah BR 302 (Z5.BR.302)</td>
-        </tr>
-        <tr>
-          <td>Kamis</td>
-          <td>Pengantar Kecerdasan Artificial</td>
-          <td>3</td>
-          <td>07:30 - 10:00</td>
-          <td>Ruang Kuliah BR 301 (Z5.BR.301)</td>
-        </tr>
-        <tr>
-          <td>Kamis</td>
-          <td>Internet Of Things</td>
-          <td>2</td>
-          <td>13:00 - 14:40</td>
-          <td>Ruang Virtual (VRTL)</td>
-        </tr> 
-        <tr>
-          <td>Jumat</td>
-          <td>Jaringan Komputer</td>
-          <td>3</td>
-          <td>07:30 - 10:00</td>
-          <td>Ruang Kuliah BR 301 (Z5.BR.301)</td>
-        </tr>
-        <tr>
-          <td>Jumat</td>
-          <td>Sistem Operasi</td>
-          <td>2</td>
-          <td>10:00 - 12:30</td>
-          <td>Ruang Kuliah COE1.304 (Z5.C1.304)</td>
-      </tbody>
-    </table>
+  <!-- Container -->
+  <div class="main-wrapper">
+    <div class="panel">
+      <h1>Jadwal Kuliah Praja</h1>
 
-    <a href="index.html" class="btn-back">&larr; Kembali</a>
+      <div class="table-responsive">
+        <table>
+          <thead>
+            <tr>
+              <th>Hari</th>
+              <th>Mata Kuliah</th>
+              <th>Jumlah SKS</th>
+              <th>Waktu</th>
+              <th>Ruang</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Senin</td>
+              <td>Pancasila</td>
+              <td>2</td>
+              <td>11:00 - 12:40</td>
+              <td>Ruang Virtual (VRTL)</td>
+            </tr>
+            <tr>
+              <td>Selasa</td>
+              <td>Pemrograman Web</td>
+              <td>3</td>
+              <td>13:00 - 15:30</td>
+              <td>Ruang Lab. Informatika (Z5.C1.Lab.IF)</td>
+            </tr>
+            <tr>
+              <td>Selasa</td>
+              <td>Sistem Basis Data</td>
+              <td>3</td>
+              <td>15:30 - 18:00</td>
+              <td>Ruang Kuliah U 205 (Z5.U.205)</td>
+            </tr>
+            <tr>
+              <td>Rabu</td>
+              <td>Desain dan Analisis Algoritma</td>
+              <td>3</td>
+              <td>13:00 - 15:30</td>
+              <td>Ruang Kuliah U 205 (Z5.U.205)</td>
+            </tr>
+            <tr>
+              <td>Rabu</td>
+              <td>Studi Kebantenan</td>
+              <td>2</td>
+              <td>16:20 - 18:00</td>
+              <td>Ruang Kuliah BR 302 (Z5.BR.302)</td>
+            </tr>
+            <tr>
+              <td>Kamis</td>
+              <td>Pengantar Kecerdasan Artificial</td>
+              <td>3</td>
+              <td>07:30 - 10:00</td>
+              <td>Ruang Kuliah BR 301 (Z5.BR.301)</td>
+            </tr>
+            <tr>
+              <td>Kamis</td>
+              <td>Internet Of Things</td>
+              <td>2</td>
+              <td>13:00 - 14:40</td>
+              <td>Ruang Virtual (VRTL)</td>
+            </tr> 
+            <tr>
+              <td>Jumat</td>
+              <td>Jaringan Komputer</td>
+              <td>3</td>
+              <td>07:30 - 10:00</td>
+              <td>Ruang Kuliah BR 301 (Z5.BR.301)</td>
+            </tr>
+            <tr>
+              <td>Jumat</td>
+              <td>Sistem Operasi</td>
+              <td>2</td>
+              <td>10:00 - 12:30</td>
+              <td>Ruang Kuliah COE1.304 (Z5.C1.304)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <a href="index.html" class="btn-back">&larr; Kembali</a>
+    </div>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

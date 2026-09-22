@@ -1,42 +1,71 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portal Jadwal Kuliah</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal Jadwal Kuliah</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="card">
-    <div class="card-header">
-      <span class="badge">INFORMATIKA - FAKULTAS TEKNIK</span>
-      <h1>Portal Jadwal Kuliah</h1>
-      <p>Universitas Sultan Ageng Tirtayasa</p>
+  <!-- Navbar Bootstrap -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand font-weight-bold" href="index.html">UNTIRTA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="jadwal-fajar.html">Jadwal Fajar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="jadwal-praja.html">Jadwal Praja</a>
+          </li>
+        </ul>
+      </div>
     </div>
+  </nav>
 
-    <div class="card-body">
-      <p class="prompt">Pilih mahasiswa untuk melihat jadwal kuliah:</p>
+  <!-- Flexbox -->
+  <div class="main-wrapper">
+    <div class="card">
+      <div class="card-header">
+        <span class="badge-custom">INFORMATIKA - FAKULTAS TEKNIK</span>
+        <h1>Portal Jadwal Kuliah</h1>
+        <p>Universitas Sultan Ageng Tirtayasa</p>
+      </div>
 
-      <a href="jadwal-fajar.html" class="btn btn-filled">
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <circle cx="12" cy="8" r="4"></circle>
-          <path d="M4 20c0-4.4 3.6-8 8-8s8 3.6 8 8"></path>
-        </svg>
-        Jadwal Fajar
-      </a>
+      <div class="card-body">
+        <p class="prompt">Pilih mahasiswa untuk melihat jadwal kuliah:</p>
 
-      <a href="jadwal-praja.html" class="btn btn-outline">
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <circle cx="12" cy="8" r="4"></circle>
-          <path d="M4 20c0-4.4 3.6-8 8-8s8 3.6 8 8"></path>
-        </svg>
-        Jadwal Praja
-      </a>
+        <a href="jadwal-fajar.html" class="btn btn-filled">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="8" r="4"></circle>
+            <path d="M4 20c0-4.4 3.6-8 8-8s8 3.6 8 8"></path>
+          </svg>
+          Jadwal Fajar
+        </a>
 
-      <p class="footer">&copy; 2026 FT UNTIRTA. All rights reserved.</p>
+        <a href="jadwal-praja.html" class="btn btn-outline">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="8" r="4"></circle>
+            <path d="M4 20c0-4.4 3.6-8 8-8s8 3.6 8 8"></path>
+          </svg>
+          Jadwal Praja
+        </a>
+
+        <p class="footer">&copy; 2026 FT UNTIRTA. All rights reserved.</p>
+      </div>
     </div>
   </div>
 
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
